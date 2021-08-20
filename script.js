@@ -6,6 +6,10 @@ const fs=require("fs")
 
 async function main(browser)
 {
+
+
+
+  
       await browser.get("https://careers.google.com/jobs/results/");
         await browser.wait(wd.until.elementLocated(wd.By.css(".gc-search-input__input.gc-traditional-input")));
         let roles=  await  browser.findElements(wd.By.css(".gc-search-input__input.gc-traditional-input"));
